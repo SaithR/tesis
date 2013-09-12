@@ -28,7 +28,7 @@ end
 # Then steps
 # ============
 Then(/^he should see session error message$/) do
-  page.should have_content("It seems you don't have the permission to access this page.")
+  step "he should see a \"It seems you don't have the permission to access this page.\" message"
 end
 
 Then(/^he should not see the session error message$/) do
